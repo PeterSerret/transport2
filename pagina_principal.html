@@ -1,39 +1,55 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="ca">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Notícies de Transport Públic</title>
+  <style>
+    .noticies-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .noticia {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
   <h1>Notícies de Transport</h1>
 
-  <ul>
-    <li>
+  <div class="noticies-container">
+    <div class="noticia">
       <a href="nova_linia.html">
         <h2>Nova línia d'autobusos a la ciutat</h2>
-        <img src="https://peterserret.github.io/transport2/nova_linia.jpeg" alt="Nova línia d'autobusos" style="max-width:100%;">
+        <img src="https://peterserret.github.io/transport2/nova_linia.jpeg" alt="Nova línia d'autobusos">
       </a>
-    </li>
-    <li>
+    </div>
+    <div class="noticia">
       <a href="incidencies_pantalles.html">
         <h2>Incidències a les pantalles de les aturades</h2>
-        <img src="https://peterserret.github.io/transport2/pantalles.jpeg" alt="Incidències a les pantalles" style="max-width:100%;">
+        <img src="https://peterserret.github.io/transport2/pantalles.jpeg" alt="Incidències a les pantalles">
       </a>
-    </li>
-    <li>
+    </div>
+    <div class="noticia">
       <a href="autobusos_electrics.html">
         <h2>Nous autobusos elèctrics per a la flota</h2>
-        <img src="https://peterserret.github.io/transport2/electrics.jpeg" alt="Incidències a les pantalles" style="max-width:100%;">
+        <img src="https://peterserret.github.io/transport2/electrics.jpeg" alt="Nous autobusos elèctrics">
       </a>
-    </li>
-    <li>
+    </div>
+    <div class="noticia">
       <a href="carrils_bici.html">
         <h2>Ampliació de la xarxa de carrils bici</h2>
-        <img src="https://peterserret.github.io/transport2/carril_bici.jpeg" alt="Ampliació de la xarxa de carrils bici" style="max-width:100%;">
+        <img src="https://peterserret.github.io/transport2/carril_bici.jpeg" alt="Ampliació de la xarxa de carrils bici">
       </a>
-    </li>
-  </ul>
+    </div>
+  </div>
 
   <hr>
 
